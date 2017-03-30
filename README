@@ -1,0 +1,21 @@
+MBL - Minimal Boot Loader for 80C188EB project board
+Arto Merilainen, arto.merilainen@gmail.com
+
+This repository includes a small bootloader for 80C188EB CPU. The
+bootloader simply sets up UART, loads an application and starts
+execution of the just loaded application.
+
+The code in this repository is intended to be a demonstration how
+the CPU can be initialized and there is no guarantee that it will
+work in the configuration you have.
+
+Code was written in 2005 and I've tried to keep most of the code
+intact to reduce possibility of accidentally breaking it (I just
+translated my comments in Finnish to English).
+
+In case you think you have found a bug, please drop me an email.
+
+
+You can compile the bootloader using nasm:
+
+  nasm bootldr.asm -o bootldr.bin
